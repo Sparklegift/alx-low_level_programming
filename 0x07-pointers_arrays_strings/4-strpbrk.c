@@ -1,5 +1,5 @@
 #include "main.h"
-#include <stdio>
+#include <stdio.h>
 /**
  * _strpbrk - print the consecution of sl that are in s2.
  * @s: source string
