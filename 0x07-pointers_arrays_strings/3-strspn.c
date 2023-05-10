@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * _memset - fills memory with a constant byte.
+ * _strspn - prints the consecutive characers of sl that are in s2
  * @s: source string
  * @accept: searching string
  * Return: new string.
