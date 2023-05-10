@@ -2,7 +2,7 @@
 /**
  * _strstr - first occurance of the substring needle in the string haystack
  * @haystack: main str to be examined
- * @heedle: searced in haystack
+ * @needle: searced in haystack
  * Return: return 0
  */
 char *_strstr(char *haystack, char *needle)
