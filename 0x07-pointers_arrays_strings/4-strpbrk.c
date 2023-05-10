@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * _strpbrk - print the consecution of sl that are in s2.
+ * _strpbrk - print the consecution of sl that are in s2
  * @s: source string
  * @accept: searching string
  * Return: new string.
