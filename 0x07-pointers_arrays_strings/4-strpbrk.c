@@ -12,7 +12,6 @@ char *_strpbrk(char *s, char *accept)
 
 	for (i = 0; *(s + i); i++)
 	{
-
 		for (j = 0; *(accept + j); j++)
 		{
 			if (*(s + i) == *(accept + j))
@@ -22,7 +21,7 @@ char *_strpbrk(char *s, char *accept)
 		}
 		if (*(accept + j) != '/0')
 		{
-			return (s + i);
+			return (s);
 		}
 	}
 	return (0);
