@@ -10,7 +10,8 @@ int sqrthelper(int num, int sqrtn)
 	if ((sqrtn * sqrtn) == num)
 	{
 		return (sqrtn);
-	}else
+	}
+	else
 	{
 		if ((sqrtn * sqrtn) > num)
 			return (-1);
