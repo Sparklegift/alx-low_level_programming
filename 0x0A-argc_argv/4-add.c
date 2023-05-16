@@ -22,8 +22,11 @@ int main(int argc, char *argv[])
 			str = argv[i];
 			for (k = 0; str[k] != "\0"; k++)
 			{
+				if (str[k] < 48 || str[k] > 57)
+				{
 				printf("Error\n");
 				return (1);
+				}
 			}
 		}
 	}
