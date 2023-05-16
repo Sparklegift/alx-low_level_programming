@@ -19,7 +19,6 @@ int main(int argc, char *argv[])
 			int k;
 			char *str;
 
-
 			str = argv[i];
 			for (k = 0; str[k] != "\0"; k++)
 			{
