@@ -9,6 +9,7 @@
 int main(int argc, char *argv[])
 {
 	int i, mul;
+
 	mul = 1;
 	if (argc < 3)
 	{
