@@ -33,16 +33,16 @@ char *argstostr(int ac, char **av)
 	i = 0;
 	while (i < ac)
 	{
-		j =0;
-		 while (av[i][j])
-		 {
-			 arg[k] = av[i][j];
-			 j++;
-			 k++;
-		 }
-		 arg[k] = '\n';
-		 k++;
-		 i++;
+		j = 0;
+		while (av[i][j])
+		{
+			arg[k] = av[i][j];
+			j++;
+			k++;
+		}
+		arg[k] = '\n';
+		k++;
+		i++;
 	}
 	arg[k] = '\0';
 	return (arg);
