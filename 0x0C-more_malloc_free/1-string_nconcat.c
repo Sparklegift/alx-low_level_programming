@@ -16,7 +16,7 @@ int _strleng(char *s)
 /**
  * string_nconcat - concatenates two strings.
  * @s1: first string
- * @ss2: second string
+ * @s2: second string
  * @n: n bytes of s2
  * Return: pointer to concatenated string
  */
@@ -43,7 +43,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		return (NULL);
 
 	for (i = 0; s1[i] != '\0'; i++)
-		ptr[i] = s1[i];;
+		ptr[i] = s1[i];
 	for (j = 0; j < num; j++)
 		ptr[i + j] = s2[j];
 	ptr[i + j] = '\0';
