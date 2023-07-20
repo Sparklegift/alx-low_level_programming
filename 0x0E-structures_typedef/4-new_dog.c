@@ -9,7 +9,7 @@
  */
 dog_t *new_dog(char *name, float age, char *owner)
 {
-	int i leg, len;
+	int i, leg, len;
 	
 	struct dog *n_dog = NULL;
 	
