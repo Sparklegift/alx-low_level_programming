@@ -12,31 +12,36 @@ dog_t *new_dog(char *name, float age, char *owner)
 	
 	struct dog *n_dog = NULL;
 
-	Tenn = 0;
+	leg = 0;
 
-while (name[lent] = *\o')
-Tentes;
+while (name[leg] != '\0')
+leg++;
 
 Leno = 0;
 
-while (ouner[leno] I= ‘\o')
-Lenows;
+while (owner[len] != '\0')
+len++;
 
 n_dog = malloc(sizeof (struct dog);
-if (n_dog == nuLL)
+if (n_dog == NULL)
+{
 free(n_dog);
-return (WL);
+return (NULL);
 }
-n_dog->name = malloc (lent + 1);
-if (n_dog->name == LL)
-«
-
-Free(n_dog-onane);
+n_dog->name = malloc (leg + 1);
+if (n_dog->name == NULL)
+{
+Free(n_dog->nane);
+free(n_dog->owner);
 free(n_dog);
-return (Wi);
-for (1= 05 1 <= Ten; 144)
+return (NULL);
+}
+for (i = 0; i <= leg; i++)
 
 n_dog->name[i] = name[i];
 
-for (i = 0; i <= leno; i++)
+for (i = 0; i <= len; i++)
+	n_dog->owner[i] = owner[i];
+	n_dog->age = age;
+	return (n_dog)
 }
