@@ -20,7 +20,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 		owner_len++;
 
 	// Allocate memory for the new dog struct
-	*n_dog = malloc(sizeof(struct dog));
+	n_dog = malloc(sizeof(struct dog));
 	if (n_dog == NULL)
 	{
 		free(n_dog);
