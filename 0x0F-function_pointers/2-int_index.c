@@ -7,12 +7,11 @@
  */
 int int_index(int *array, int size, int (*cmp)(int))
 {
-    int i, resu;
+    int i;
 
-    resu = -1;
     if (array == NULL || cmp == NULL || size <= 0)
     {
-        return (resu);
+        return (-1);
     }
     for (i = 0; i < size; i++)
     {
@@ -21,5 +20,5 @@ int int_index(int *array, int size, int (*cmp)(int))
             return (i);
         }
     }
-    return (resu);
+    return (-1);
 }
