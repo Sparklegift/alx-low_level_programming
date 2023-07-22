@@ -12,7 +12,7 @@ int int_index(int *array, int size, int (*cmp)(int))
     resu = -1;
     if (array == NULL || cmp == NULL || size <= 0)
     {
-        return (resu); // Return -1 if the size is invalid (non-positive)
+        return (resu);
     }
     for (i = 0; i < size; i++)
     {
@@ -21,5 +21,5 @@ int int_index(int *array, int size, int (*cmp)(int))
             return (i);
         }
     }
-    return (resu); // Return -1 if no element meets the comparison condition
+    return (resu);
 }
