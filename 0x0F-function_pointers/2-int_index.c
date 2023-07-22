@@ -11,23 +11,15 @@ int int_index(int *array, int size, int (*cmp)(int))
     int i, resu;
 
     resu = -1;
-    if (array && cmp)
+    if (array == NULL || cmp == NULL || size <= 0)
     {
-        if (size <= 0)
+        return (resu); // Return -1 if the size is invalid (non-positive)
+    }
+    for (i = 0; i < size; i++)
+    {
+        if (cmp(array[i]) != 0)
         {
-            return (resu); // Return -1 if the size is invalid (non-positive)
-        }
-        for (i = 0; i < size; i++)
-        {
-            if (cmp(array[i]) > 0)
-            {
-                resu = i;
-                break;
-            }
-            else if (cmp(array[i]) < 0)
-            {
-                return (resu); // Return -1 if there is an error in the comparison
-            }
+            return (i);
         }
     }
     return (resu); // Return -1 if no element meets the comparison condition
