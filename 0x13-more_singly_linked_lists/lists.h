@@ -8,9 +8,6 @@
  * struct listint_s - singly linked list
  * @n: integer
  * @next: points to the next node
- *
- * Description: singly linked list node structure
- * for alx project
  */
 typedef struct listint_s
 {
@@ -35,4 +32,3 @@ size_t free_listint_safe(listint_t **h);
 listint_t *find_listint_loop(listint_t *head);
 
 #endif
-
